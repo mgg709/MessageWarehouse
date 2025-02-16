@@ -5,6 +5,6 @@ This repository consists of a simple smart contract for practicing basic concept
 ## Features
 I have developed a message warehouse, where the user can interact with a message using a password:
 
-- 📖 Read message: with this function the user can read the actual stored message, but the password will be needed.
-- 📩 Send message: function with two arguments, the password for checking if the action can be executed and the message that will be send.
-- ❌ Delete message: if the password is correct, the actual message stored in the warehouse will be deleted.
+- 📖 Read message:  this function allows users to read the currently stored message, if the password is correct.
+- 📩 Send message: function with two arguments, the password (to verify if the action can be executed) and the message to be stored.
+- ❌ Delete message: if the password is correct, the currently stored message in the warehouse will be deleted.

@@ -35,7 +35,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "password_",
+						"name": "channel_",
 						"type": "string"
 					}
 				],
@@ -54,7 +54,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "password_",
+						"name": "channel_",
 						"type": "string"
 					}
 				],
@@ -73,7 +73,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "password_",
+						"name": "channel_",
 						"type": "string"
 					},
 					{
@@ -122,11 +122,11 @@
 	},
 	"sources": {
 		"contracts/MessageWarehouse.sol": {
-			"keccak256": "0x4e17206f2cfef54a525a0eaeafa4e6338e766386d43de99500c1e37e84ec5380",
+			"keccak256": "0x54483f36de49dbb1cc967dd455d949ae92d7d170f53a8b018cfae68b2f7ff688",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://87264d1f84bfe99e9cf33cda4172337053e8e575ac13ffd81434ce6cc1d01a40",
-				"dweb:/ipfs/QmSPE8mG9ur2RDTG5wY1pwdXEvvCsi93Duvchsb9Cw2nRj"
+				"bzz-raw://85865beed51b846b0004eb7445f658d5c496c4e6903d9e985a7ad1952e1c38ba",
+				"dweb:/ipfs/QmUPi61nScFdEmq2T5pRSNTM4jM9EG7gZQ636QAfT3tAy5"
 			]
 		}
 	},

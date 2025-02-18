@@ -7,8 +7,8 @@ pragma solidity 0.8.24;
 contract MessageWarehouse{
     string internal message = "";
 
-    modifier checkPassword(string memory password_){
-        if (keccak256(abi.encodePacked(password_)) != keccak256(abi.encodePacked("almeria"))) revert();
+    modifier checkChannel(string memory channel_){
+        if (keccak256(abi.encodePacked(channel_)) != keccak256(abi.encodePacked("alpha"))) revert();
         _;
     }
 
@@ -16,18 +16,18 @@ contract MessageWarehouse{
     event ReadMessage(string message_);
 
 
-    function readMessage(string memory password_) public checkPassword(password_) returns(string memory message_){
+    function readMessage(string memory channel_) public checkChannel(channel_) returns(string memory message_){
         message_ = message;
         emit ReadMessage(message_);
     }
 
-    function sendMessage(string memory password_, string memory message_) public checkPassword(password_) returns(string memory status_){
+    function sendMessage(string memory channel_, string memory message_) public checkChannel(channel_) returns(string memory status_){
         message = message_;
         status_ = "The message has been sent";
         emit SendMessage(message_);
     }
 
-    function deleteMessage(string memory password_) public checkPassword(password_) returns(string memory message_){
+    function deleteMessage(string memory channel_) public checkChannel(channel_) returns(string memory message_){
         message = "";
         message_ = "The message has been deleted";
         emit SendMessage(message_);
